@@ -1,16 +1,22 @@
+:root {
+  :root {
+    --brand-primary: #4B3F72;
+    --brand-accent: #FF6B6B;
+    --background-light: #F9F9F9;
+    --text-color: #333333;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Inter', sans-serif;
+  }
+  
 
-body, h1, p {
-  margin: 0;
-  padding: 0;
+ 
 }
-
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  font-family: var(--body-font);
+  background: var(--background-light);
+  color: var(--text-color);
 }
-
 
 .hero {
   background: linear-gradient(135deg, #f2f7ff, #ffffff);
@@ -18,15 +24,13 @@ body {
   text-align: center;
 }
 
-
 .hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--heading-font);
   font-size: 3rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: var(--brand-primary);
   margin-bottom: 20px;
 }
-
 
 .hero p.lead {
   font-size: 1.25rem;
@@ -35,29 +39,21 @@ body {
   margin-bottom: 30px;
 }
 
-
 .hero .btn-primary {
-  background-color: #0066ff;
-  border-color: #0066ff;
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
   font-weight: 600;
   padding: 12px 24px;
   transition: background-color 0.3s ease;
 }
 
 .hero .btn-primary:hover {
-  background-color: #0052cc;
-  border-color: #0052cc;
-}
-
-
-footer {
-  text-align: center;
-  padding: 40px 0 20px;
-  font-size: 1.5rem;
+  background-color: #382c5c;
+  border-color: #382c5c;
 }
 
 footer i {
-  color: #0077b5;
+  color: var(--brand-accent);
   transition: transform 0.3s ease;
 }
 
