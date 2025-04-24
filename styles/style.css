@@ -16,7 +16,6 @@ body {
 
 .hero {
   background: linear-gradient(135deg, #f2f7ff, #ffffff);
-  text-align: center;
 }
 
 .hero h1 {
@@ -29,6 +28,15 @@ body {
 .hero p.lead {
   font-size: 1.2rem;
   color: #555;
+}
+
+.hero-img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid var(--brand-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
