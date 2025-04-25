@@ -7,21 +7,37 @@
   --body-font: 'Inter', sans-serif;
 }
 
+
 body {
   font-family: var(--body-font);
   background: var(--background-light);
   color: var(--text-color);
   margin: 0;
+  line-height: 1.6;
 }
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+  color: var(--brand-primary);
+}
+
+a {
+  color: var(--brand-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 .hero {
   background: linear-gradient(135deg, #f2f7ff, #ffffff);
+  padding: 60px 0;
 }
 
 .hero h1 {
-  font-family: var(--heading-font);
   font-size: 2.5rem;
-  color: var(--brand-primary);
   margin-bottom: 10px;
 }
 
@@ -43,17 +59,12 @@ body {
   background-color: var(--brand-primary);
   border-color: var(--brand-primary);
   font-weight: 600;
+  color: #fff;
 }
 
 .btn-primary:hover {
   background-color: #382c5c;
   border-color: #382c5c;
-}
-
-h2 {
-  font-family: var(--heading-font);
-  font-size: 2.25rem;
-  color: var(--brand-primary);
 }
 
 .btn-branding-outline {
@@ -63,7 +74,6 @@ h2 {
   border: 2px solid var(--brand-primary);
   border-radius: 4px;
   transition: all 0.3s ease;
-  text-align: center;
   display: inline-block;
 }
 
@@ -72,33 +82,17 @@ h2 {
   color: #fff;
 }
 
-.card-title {
-  font-family: var(--heading-font);
-  font-weight: 600;
-  color: var(--brand-primary);
-}
 
-footer i {
-  color: var(--brand-accent);
-  transition: transform 0.3s ease;
-}
-
-footer i:hover {
-  transform: scale(1.2);
-}
 .about-section {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 60px 0;
 }
 
 .about-section h1 {
-  font-family: var(--heading-font);
   font-size: 2.5rem;
-  color: var(--brand-primary);
 }
 
 .about-section h2 {
-  font-family: var(--heading-font);
   font-size: 1.5rem;
   color: var(--brand-accent);
   margin-top: 20px;
@@ -106,7 +100,6 @@ footer i:hover {
 
 .about-section p {
   font-size: 1rem;
-  color: var(--text-color);
   line-height: 1.7;
   margin-top: 20px;
 }
@@ -134,16 +127,13 @@ footer i:hover {
   margin-top: 20px;
 }
 
-
 .projects-section {
   padding: 60px 0;
   background-color: var(--background-light);
 }
 
-.projects-section h1 {
-  font-family: var(--heading-font);
-  color: var(--brand-primary);
-  font-size: 2.5rem;
+.projects-section h1,
+.projects-section h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -181,13 +171,11 @@ footer i:hover {
 
 .project-card .card-title {
   font-size: 1.3rem;
-  color: var(--brand-primary);
   margin-bottom: 10px;
 }
 
 .project-card .card-text {
   font-size: 1rem;
-  color: var(--text-color);
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -197,29 +185,34 @@ footer i:hover {
   font-weight: 600;
 }
 
-.project-card .btn-outline-primary {
+.btn-outline-primary {
   color: var(--brand-primary);
   border-color: var(--brand-primary);
 }
 
-.project-card .btn-outline-primary:hover {
+.btn-outline-primary:hover {
   background-color: var(--brand-primary);
   color: #fff;
 }
 
-.project-card .btn-outline-secondary {
+.btn-outline-secondary {
   color: var(--brand-accent);
   border-color: var(--brand-accent);
 }
 
-.project-card .btn-outline-secondary:hover {
+.btn-outline-secondary:hover {
   background-color: var(--brand-accent);
   color: #fff;
 }
+
+
+.contact-section {
+  padding: 60px 0;
+}
+
 .contact-section h1 {
-  font-family: var(--heading-font);
-  color: var(--brand-primary);
   font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 
 .contact-section .form-label {
@@ -242,4 +235,22 @@ footer i:hover {
 
 .contact-section .btn-primary:hover {
   background-color: #382c5c;
+}
+
+
+footer {
+  font-size: 0.9rem;
+  background-color: #fff;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer i {
+  color: var(--brand-accent);
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+
+footer i:hover {
+  transform: scale(1.2);
 }
