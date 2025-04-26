@@ -1,11 +1,12 @@
 :root {
-  --brand-primary: #4B3F72;
-  --brand-accent: #FF6B6B;
-  --background-light: #F9F9F9;
-  --text-color: #333333;
+  --brand-primary: #3B4D61;       
+  --brand-accent: #D4A373;        
+  --background-light: #FAF4EF;    
+  --text-color: #2D2D2D;          
   --heading-font: 'Playfair Display', serif;
   --body-font: 'Inter', sans-serif;
 }
+
 
 body {
   font-family: var(--body-font);
