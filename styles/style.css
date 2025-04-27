@@ -15,7 +15,18 @@ body {
   margin: 0;
   line-height: 1.6;
   scroll-behavior: smooth; 
+  
 }
+html body {overflow-x: hidden;}
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 h1, h2, h3, h4, h5 {
   font-family: var(--heading-font);
@@ -179,6 +190,8 @@ a:hover {
 .about-section {
   background-color: #fff;
   padding: 60px 0;
+  width: 100%;
+max-width: 100%;
 }
 
 .about-section h1 {
@@ -245,6 +258,8 @@ a:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #fff;
+  width: 100%;
+max-width: 100%;
 }
 
 .project-card:hover {
@@ -369,3 +384,13 @@ footer i:hover {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .container,
+  .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+ 
